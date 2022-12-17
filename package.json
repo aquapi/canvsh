@@ -1,7 +1,7 @@
 {
   "name": "canvsh",
   "version": "1.0.1",
-  "description": "Canvas game",
+  "description": "Canvas helper",
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
