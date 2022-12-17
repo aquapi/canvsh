@@ -19,15 +19,9 @@ export default class Snake extends CanvasObject {
         this.direction = SnakeDirection.RIGHT;
         this.food = new Food(canvas);
 
-        addEventListener("keydown", e => {
-            switch (e.key) {
-                case "a":
-                case "d":
-                case "w":
-                case "s":
-                    this.direction = e.key as SnakeDirection;
-            }
-        });
+        addEventListener("keydown", e => 
+            this.direction = e.key as SnakeDirection
+        );
 
         this.countDown = 15;
     }
