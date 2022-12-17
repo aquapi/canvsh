@@ -1,0 +1,15 @@
+{
+  "name": "canvas-helper",
+  "version": "1.0.0",
+  "description": "Canvas game",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.11.10",
+    "esbuild": "^0.15.17",
+    "typescript": "^4.9.3"
+  },
+  "scripts": {
+    "build-test": "esbuild tests/src/main.ts --bundle --outfile=tests/index.js"
+  }
+}
