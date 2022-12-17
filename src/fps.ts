@@ -1,14 +1,22 @@
-const times = [];
-export let fps = 0;
+export default class FPSCounter {
+    private readonly times: number[];
 
-export function loop() {
-    requestAnimationFrame(() => {
-        const now = performance.now();
-        while (times.length > 0 && times[0] <= now - 1000) 
-            times.shift();
-        
-        times.push(now);
-        fps = times.length;
-        loop();
-    });
+    constructor() {
+        this.times = [];
+    }
+
+    get fps() {
+        return this.times.length;
+    }
+
+    run() {
+        requestAnimationFrame(() => {
+            const now = performance.now();
+            while (this.times.length > 0 && this.times[0] <= now - 1000)
+                this.times.shift();
+
+            this.times.push(now);
+            this.run();
+        });
+    }
 }
