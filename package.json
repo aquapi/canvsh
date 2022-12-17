@@ -1,6 +1,6 @@
 {
   "name": "canvsh",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Canvas game",
   "main": "index.js",
   "license": "MIT",
