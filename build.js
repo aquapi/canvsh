@@ -11,5 +11,6 @@ require("esbuild").buildSync({
     outfile: "./index.js",
     // minify: true,
     legalComments: "none",
-    format: "esm"
+    format: "esm",
+    minify: true
 });
