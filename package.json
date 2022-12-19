@@ -1,8 +1,9 @@
 {
   "name": "canvsh",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Canvas helper",
   "main": "index.js",
+  "types": "types/index.d.ts",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^18.11.10",
